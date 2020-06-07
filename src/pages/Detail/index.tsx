@@ -15,6 +15,7 @@ interface IParams {
 interface IPoint {
   point: {
     name: string;
+    image_url: string;
     image: string;
     email: string;
     whatsapp:string;
@@ -65,7 +66,7 @@ const Detail = () => {
         <TouchableOpacity onPress={handleNavigateBack}>
             <Icon name="arrow-left" size={20} color="#34cb79"/>
         </TouchableOpacity>
-        <Image style={styles.pointImage} source={{uri:data?.point?.image}}/>
+        <Image style={styles.pointImage} source={{uri:data?.point?.image_url}}/>
       
       
       
